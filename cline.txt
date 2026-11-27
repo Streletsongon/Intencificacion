@@ -1,0 +1,99 @@
+Actúa como un desarrollador de software senior especializado en Python, interfaces gráficas con Tkinter y bases de datos SQLite.
+
+Quiero que desarrolles una aplicación de escritorio completa, funcional y organizada, utilizando las siguientes tecnologías obligatorias:
+
+1. Tecnologías requeridas
+Entorno de desarrollo: Visual Studio Code.
+Asistente de programación: Extensión Cline.
+Lenguaje de programación: Python 3.
+Interfaz gráfica: Tkinter (incluyendo ttk).
+Base de datos: SQLite.
+Acceso a datos: Biblioteca sqlite3 de Python.
+2. Objetivo del proyecto
+Desarrollar una aplicación de escritorio que permita gestionar información mediante una interfaz gráfica intuitiva y una base de datos persistente.
+
+La aplicación debe permitir realizar operaciones CRUD:
+
+Crear nuevos registros.
+Consultar registros existentes.
+Modificar registros.
+Eliminar registros.
+Antes de comenzar, analiza los requisitos y establece una estructura adecuada para el proyecto.
+
+3. Interfaz gráfica
+Desarrolla una interfaz gráfica utilizando exclusivamente Tkinter y ttk.
+
+La interfaz debe contar con:
+
+Ventana principal con título personalizado.
+Menú de navegación.
+Formularios para ingresar información.
+Botones para agregar, modificar, eliminar y consultar registros.
+Tabla de datos utilizando ttk.Treeview.
+Campos de búsqueda y filtrado.
+Mensajes de confirmación y advertencia.
+Validaciones de los datos ingresados.
+Diseño ordenado, moderno y fácil de utilizar.
+La aplicación debe tener una distribución clara y los elementos deben estar correctamente organizados.
+
+4. Base de datos
+Utiliza SQLite como sistema de gestión de base de datos.
+
+Requisitos:
+
+Crear automáticamente el archivo de base de datos si no existe.
+Crear las tablas necesarias al iniciar la aplicación.
+Establecer claves primarias y relaciones cuando corresponda.
+Utilizar consultas parametrizadas para evitar inyecciones SQL.
+Implementar operaciones de inserción, consulta, actualización y eliminación.
+Manejar errores de conexión y consultas.
+Mantener la información guardada aunque se cierre la aplicación.
+Separar las operaciones de base de datos de la lógica de la interfaz gráfica.
+
+5. Organización del código
+Organiza el proyecto utilizando una estructura modular y mantenible.
+
+Ejemplo de estructura:
+
+proyecto/ │ ├── main.py ├── database.py ├── models.py ├── controllers.py ├── views/ │ ├── init.py │ └── main_window.py │ ├── assets/ │ ├── database/ │ └── app.db │ └── README.md
+
+Cada archivo debe tener responsabilidades específicas.
+
+main.py: punto de entrada de la aplicación.
+database.py: conexión y operaciones con SQLite.
+models.py: representación y estructura de los datos.
+controllers.py: lógica de negocio.
+views/: interfaz gráfica.
+README.md: documentación e instrucciones de ejecución.
+6. Buenas prácticas
+Durante el desarrollo debes:
+
+Aplicar programación orientada a objetos cuando corresponda.
+Utilizar nombres de variables, métodos y clases descriptivos.
+Comentar las partes importantes del código.
+Evitar repetir código innecesariamente.
+Separar la interfaz gráfica de la lógica de negocio.
+Implementar manejo de excepciones.
+Validar los campos antes de guardar información.
+Mantener un código limpio, legible y escalable.
+7. Funcionamiento
+La aplicación debe cumplir el siguiente flujo:
+
+El usuario ejecuta main.py.
+Se inicializa la base de datos SQLite.
+Se abre la ventana principal.
+El usuario puede ingresar nuevos registros.
+Los registros se guardan en la base de datos.
+Los datos se muestran en una tabla.
+El usuario puede buscar, editar y eliminar registros.
+Los cambios se reflejan automáticamente en la interfaz.
+8. Documentación
+Genera un archivo README.md que explique:
+
+Descripción general del proyecto.
+Tecnologías utilizadas.
+Requisitos necesarios.
+Estructura de carpetas.
+Instalación y configuración.
+Cómo ejecutar la aplicación.
+Funcionamiento de cada módulo.
